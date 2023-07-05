@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+h1 {
+   font-family: 'Times New Roman';
+   color: #ffffff;
+   text-align: center;
+}
+
+body {
+   font-family: Georgia;
+   margin: 0;
+   padding: 0;
+   background-image: linear-gradient(rgb(120, 56, 151), rgb(65, 32, 173) );
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat;
+ }
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+ }
+
+
+ nav{
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   padding: 35px 5%;
+}
+nav.logo{
+   font-size: 35px;
+   font-weight: 700;
+}
+nav ul{
+   display: flex;
+   list-style: none;
+}
+nav ul li{
+   padding: 8px 15px;
+   border-radius:10px;
+   transition: 0.2s ease-in;
+}
+nav ul li a{
+   color: rgb(31, 3, 49);
+   font-size: 18px;
+   font-weight: 500;
+   text-decoration: none;
+}
+nav .navlinks button{
+   padding: 2px 20px;
+   border-radius: 10px;
+   color: black;
+   font-size: 16px;
+   border-style: none;
+   font-weight: 700;
+   margin-left: 10px;
+   cursor: pointer;
+}
+nav ul li:hover{
+   background-color:rgb(206, 201, 212) ;
+}
+nav .navlinks button:hover{
+   background-color:rgb(18, 132, 213) ;
+}
+ .container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+ 
+ .container h1{
+    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+
+ }
+ .gallery{
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ .card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+ .card img{
+    width: 80%;
+    filter: grayscale(100%);
+    box-shadow:0 0 20px #333;
+    height: 80%;
+    object-fit: cover;
+ }
+ .card:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 1px #920707);
+ }
+ .card:hover img{
+    filter: grayscale(0%);
+ }
+ .card:hover figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0 deg, rgba(0,0,0,0.5) 0%,rgba(255,2555,255));
+    transition: 0.3s;
+ }
+ .card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+ }
+
+
